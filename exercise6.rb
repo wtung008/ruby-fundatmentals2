@@ -7,6 +7,7 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 #  puts "* #{grocery_list2}"
 #end
 
+
 # Step 1(a) add rice to grocery List
 grocery_list << "rice"
 
@@ -17,6 +18,24 @@ def grocery_list_final (a)
     puts "* #{grocery_list2}"
   end
 end
+
+#Step 2: Output total number of items on list
+puts "Total number of items on list #{grocery_list.length}"
+
+# Step 3, check if bananas are on the list:
+if grocery_list.include?("bananas") != nil
+  puts "You need to pick up bananas."
+else
+  puts "You don't ned to pick up bananas today."
+end
+
+
+# Step 4: Display second item in the list:
+grocery_list[1]
+
+# Step 5: Sort Grocery List
+grocery_list = grocery_list.sort
+grocery_list_final(grocery_list)
 
 # Print final list
 grocery_list_final(grocery_list)
