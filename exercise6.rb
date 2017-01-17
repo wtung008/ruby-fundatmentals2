@@ -31,11 +31,12 @@ end
 
 
 # Step 4: Display second item in the list:
-grocery_list[1]
+puts "Second item on the list is #{grocery_list[1]}"
 
 # Step 5: Sort Grocery List
 grocery_list = grocery_list.sort
 grocery_list_final(grocery_list)
 
-# Print final list
+# Step 6: Remove salmon from the list and reprint list
+grocery_list.delete("salmon")
 grocery_list_final(grocery_list)
