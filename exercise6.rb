@@ -26,7 +26,7 @@ puts "Total number of items on list #{grocery_list.length}"
 if grocery_list.include?("bananas") != nil
   puts "You need to pick up bananas."
 else
-  puts "You don't ned to pick up bananas today."
+  puts "You don't need to pick up bananas today."
 end
 
 
