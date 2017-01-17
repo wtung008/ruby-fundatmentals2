@@ -5,8 +5,9 @@ print "What is the temperature in fahrenheit?"
 fahrenheit = gets.chomp.to_i
 
 def conversion (a)
-  celius = (a - 32) * 5/9
-  puts "#{a} Farenheiht is equal to #{celius} Celius"
+  (a - 32) * 5/9
 end
 
-conversion (fahrenheit)
+celcius = conversion (fahrenheit)
+
+puts "#{fahrenheit} Farenheiht is equal to #{celcius} Celcius"
