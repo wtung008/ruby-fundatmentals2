@@ -9,3 +9,13 @@ students = {
 students.each do |k, v|
   puts "#{k}: #{v}"
 end
+
+
+# Step 3: Add cohort 4 with 43 students
+students[:cohort4] = 43
+
+
+# Step 4: Keys method to output all of the cohort names
+students.each do |k, v|
+  puts "#{k}"
+end
