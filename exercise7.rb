@@ -6,10 +6,13 @@ students = {
 }
 
 # Step 2: Method to display name and number of students for each cohort.
-students.each do |k, v|
-  puts "#{k}: #{v}"
+def cohorts (a)
+  a.each do |k, v|
+    puts "#{k}: #{v}"
+  end
 end
 
+cohorts(students)
 
 # Step 3: Add cohort 4 with 43 students
 students[:cohort4] = 43
@@ -19,3 +22,14 @@ students[:cohort4] = 43
 students.each do |k, v|
   puts "#{k}"
 end
+
+
+# Step 5: increase class size by 5%
+#students.keys.each do |k|
+#  k * 1.05
+#end
+
+
+# Step 6: Delete 2nd cohort
+students.delete(:cohort2)
+cohorts(students)
